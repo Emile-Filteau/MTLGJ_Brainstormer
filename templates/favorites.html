@@ -1,24 +1,11 @@
-{% include 'template.html' %}
+{% extends 'template.html' %}
 {% load brainstorm_filters %}
 
-{% block content %}	
-<div class='container'>
-	<h1>Brainstormer 101</h1>
-	
-	<div>
-		<h2>Enter a new Idea</h2>
-		<form action="{% url 'add_idea' %}" method="post">
-			{% csrf_token %}
-			<div class="input-group">
-		        <input type="text" class="form-control" name="name" placeholder="Enter your idea here!">
-		        <span class="input-group-btn"><button class="btn btn-ar btn-primary" type="submit" value="Submit" >Send</button>
-		        </span>
-		    </div>
-		</form>
-	</div>
-	
-	<div>
-		 <table role="table" class="table table-striped">
+{% block content %}
+    <div class="container">
+        <h3>My Favorite Ideas</h3>
+
+        <table role="table" class="table table-striped">
             <thead style="font-weight: bold;">
                 <td style="width:10%;">#</td>
                 <td style="width:60%;">Name</td>
@@ -52,6 +39,5 @@
                 </tr>
             {% endfor %}
         </table>
-	</div>
-</div>
+    </div>
 {% endblock %}
