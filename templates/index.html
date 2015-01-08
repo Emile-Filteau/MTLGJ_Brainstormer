@@ -1,0 +1,40 @@
+{% include 'template.html' %}
+
+{% block content %}	
+<div class='container'>
+	<h1>Brainstormer 101</h1>
+	
+	<div>
+		<h2>Enter a new Idea</h2>
+		<form action="{% url 'add_idea' %}" method="post">
+			{% csrf_token %}
+			<div class="input-group">
+		        <input type="text" class="form-control" name="name" placeholder="Enter your idea here!">
+		        <span class="input-group-btn"><button class="btn btn-ar btn-primary" type="submit" value="Submit" >Send</button>
+		        </span>
+		    </div>
+		</form>
+	</div>
+	
+	<div>
+		 <table role="table" class="table table-striped">
+            <thead>
+                <td style="width:10%;">#</td>
+                <td style="width:60%;">Name</td>
+				<td style="width:10%;">Score</td>
+                <td style="width:10%;">Vote up</td>
+                <td style="width:10%;">Vote down</td>
+            </thead>
+            {% for idea in ideas %}
+                <tr>
+                    <td>{{forloop.counter}}</td>
+                    <td>{{ idea.name }}</td>
+					<td>{{ idea.score }}</td>
+                    <td><a href="{% url 'vote_up' idea.id %}"><span class="fa fa-plus"></span></a></td>
+                    <td><a href="{% url 'vote_down' idea.id %}"><span class="fa fa-minus"></span></a></td>
+                </tr>
+            {% endfor %}
+        </table>
+	</div>
+</div>
+{% endblock %}
