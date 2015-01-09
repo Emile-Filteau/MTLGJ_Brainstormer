@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
+from django.conf.urls.static import static
 from django.contrib import admin
-from brainstormer import views
+from brainstormer import views, settings
 
 urlpatterns = patterns('',
     url(r'^$', views.index, name='index'),
@@ -9,4 +10,4 @@ urlpatterns = patterns('',
     url(r'^add_to_favorites/(?P<idea_id>\d+)', views.add_to_favorites, name='add_to_favorites'),
     url(r'^favorites/', views.my_favorites, name='favorites'),
     url(r'^admin/', include(admin.site.urls)),
-)
+) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
