@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d755c650-b2dc-47b9-97c2-2b9e932949b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/favorites.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/template.html" afterPath="$PROJECT_DIR$/templates/template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/brainstormer/urls.py" afterPath="$PROJECT_DIR$/brainstormer/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/brainstormer/views.py" afterPath="$PROJECT_DIR$/brainstormer/views.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/brainstormer/settings.py.save" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/brainstormer/settings.py" afterPath="$PROJECT_DIR$/brainstormer/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="brainstormer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="favorites.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="favorites.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/favorites.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864">
+            <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="864">
               <folding>
                 <element signature="e#221#247#0" expanded="true" />
                 <element signature="e#269#287#0" expanded="true" />
@@ -54,6 +50,15 @@
                 <element signature="e#402#420#0" expanded="true" />
                 <element signature="e#451#469#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/brainstormer/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="0" selection-start="1592" selection-end="1592" vertical-scroll-proportion="-0.38916257" vertical-offset="1245" max-vertical-offset="1854">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,6 +105,7 @@
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/brainstormer/urls.py" />
         <option value="$PROJECT_DIR$/templates/favorites.html" />
+        <option value="$PROJECT_DIR$/brainstormer/settings.py" />
       </list>
     </option>
   </component>
@@ -149,20 +155,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="brainstormer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brainstormer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brainstormer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -527,6 +519,13 @@
             <element signature="e#402#420#0" expanded="true" />
             <element signature="e#451#469#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brainstormer/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1592" selection-end="1592" vertical-scroll-proportion="-0.38916257" vertical-offset="1245" max-vertical-offset="1854">
+          <folding />
         </state>
       </provider>
     </entry>

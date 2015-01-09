@@ -53,6 +53,7 @@ ROOT_URLCONF = 'brainstormer.urls'
 
 WSGI_APPLICATION = 'brainstormer.wsgi.application'
 
+STATIC_ROOT = 'staticfiles'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
