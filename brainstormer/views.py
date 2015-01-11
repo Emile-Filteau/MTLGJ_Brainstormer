@@ -68,6 +68,11 @@ def add_to_favorites(request, idea_id):
     return redirect('index')
 
 
+def remove_from_favorites(request, idea_id):
+    add_to_favorites(request, idea_id)
+    return redirect('favorites')
+
+
 def my_favorites(request):
     favorites = []
     if request.session.get('fav_list'):

@@ -3,41 +3,13 @@
 
 {% block content %}
     <div class="container">
-        <h3>My Favorite Ideas</h3>
+        <h2>My Favorite Ideas <span class="favstar fa fa-star"></span></h2>
 
-        <table role="table" class="table table-striped">
-            <thead style="font-weight: bold;">
-                <td style="width:10%;">#</td>
-                <td style="width:60%;">Name</td>
-				<td style="width:10%;">Score</td>
-                <td style="width:10%;">Like</td>
-                <td style="width:10%;">Favorite</td>
-            </thead>
-            {% for idea in ideas %}
-                <tr {% if idea.id in likes %} class="liked" {% endif %}>
-                    <td>{{forloop.counter}}</td>
-                    <td>{{ idea.name }}</td>
-					<td>{{ idea.score }}</td>
-                    <td>
-                        <a href="{% url 'like' idea.id %}" class="like">
-                            {% if idea.id|int_to_string in likes %}
-                                <span class="fa fa-heart"></span>
-                            {% else %}
-                                <span class="fa fa-heart-o"></span>
-                            {% endif %}
-                        </a>
-                    </td>
-                    <td>
-                        <a href="{% url 'add_to_favorites' idea.id %}" class="favstar">
-                            {% if idea.id|int_to_string in favorites %}
-                                <span class="fa fa-star"></span>
-                            {% else %}
-                                <span class="fa fa-star-o"></span>
-                            {% endif %}
-                        </a>
-                    </td>
-                </tr>
-            {% endfor %}
-        </table>
+        {% if ideas %}
+            {% include 'partials/favorites_table.html' %}
+        {% else %}
+            <h3>You have no favorites!</h3>
+            <p>Click on the yellow star next to an idea to add it here.</p>
+        {% endif %}
     </div>
 {% endblock %}

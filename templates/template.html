@@ -2,21 +2,64 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Brainstormer 101</title>
+		<title>MTLGJ Brainstorm</title>
+
+        <link rel="icon" href="{% static 'images/MTLGJ_b.png' %}">
 
 		<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
 		<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" media="screen">
-		<link href="{% static 'css/buttons.css' %}" rel="stylesheet" media="screen">
         <link href="{% static 'css/main.css' %}" rel="stylesheet" media="screen">
 
 	</head>
 
 	<body>
+
+        <header>
+            <div class="header-title">
+                <div class="container">
+                    <img src="{% static 'images/MTLGJ_b.png' %}" width="150px">
+                    <h1>Brainstorm tool</h1>
+                </div>
+            </div>
+            <!--
+            <nav>
+                <div class="nav-top"></div>
+                <div class="container">
+                    <a class="nav-item" href="{% url 'index' %}"><li class="fa fa-list-ol"></li> Home</a>
+                    <a class="nav-item" href="{% url 'favorites' %}"><i class="fa fa-heart-o"></i> Likes</a>
+                    <a class="nav-item"href="{% url 'favorites' %}"><i class="fa fa-star-o"></i> Favorites</a>
+                </div>
+            </nav>
+            -->
+        </header>
 		{% block content %}{% endblock %}
 
-		<script src="{% static 'js/jquery.min.js' %}"></script>
-		<script src="{% static 'js/bootstrap.min.js' %}"></script>
-		<script src="{% static 'js/buttons.js' %}"></script>
+		<script src="{% static 'javascript/jquery.min.js' %}"></script>
+		<script src="{% static 'javascript/bootstrap.min.js' %}"></script>
+
+        <script>
+            $('.nav-item').hover(function(e) {
+                if(e.type == 'mouseenter') {
+                    if($(this).find('.fa-star-o')) {
+                        $(this).find('.fa-star-o').addClass('fa-star')
+                        $(this).find('.fa-star-o').removeClass('fa-star-o')
+                    }
+                    if($(this).find('.fa-heart-o')) {
+                        $(this).find('.fa-heart-o').addClass('fa-heart')
+                        $(this).find('.fa-heart-o').removeClass('fa-heart-o')
+                    }
+                } else {
+                    if($(this).find('.fa-star')) {
+                        $(this).find('.fa-star').addClass('fa-star-o')
+                        $(this).find('.fa-star').removeClass('fa-star')
+                    }
+                    if($(this).find('.fa-heart')) {
+                        $(this).find('.fa-heart').addClass('fa-heart-o')
+                        $(this).find('.fa-heart').removeClass('fa-heart')
+                    }
+                }
+            })
+        </script>
 
 	</body>
 

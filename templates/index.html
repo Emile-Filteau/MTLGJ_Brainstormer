@@ -1,57 +1,10 @@
 {% include 'template.html' %}
-{% load brainstorm_filters %}
 
 {% block content %}	
 <div class='container'>
-	<h1>Brainstormer 101</h1>
 	
-	<div>
-		<h2>Enter a new Idea</h2>
-		<form action="{% url 'add_idea' %}" method="post">
-			{% csrf_token %}
-			<div class="input-group">
-		        <input type="text" class="form-control" name="name" placeholder="Enter your idea here!">
-		        <span class="input-group-btn"><button class="btn btn-ar btn-primary" type="submit" value="Submit" >Send</button>
-		        </span>
-		    </div>
-		</form>
-	</div>
-	
-	<div>
-		 <table role="table" class="table table-striped">
-            <thead style="font-weight: bold;">
-                <td style="width:10%;">#</td>
-                <td style="width:60%;">Name</td>
-				<td style="width:10%;">Score</td>
-                <td style="width:10%;">Like</td>
-                <td style="width:10%;">Favorite</td>
-            </thead>
-            {% for idea in ideas %}
-                <tr {% if idea.id in likes %} class="liked" {% endif %}>
-                    <td>{{forloop.counter}}</td>
-                    <td>{{ idea.name }}</td>
-					<td>{{ idea.score }}</td>
-                    <td>
-                        <a href="{% url 'like' idea.id %}" class="like">
-                            {% if idea.id|int_to_string in likes %}
-                                <span class="fa fa-heart"></span>
-                            {% else %}
-                                <span class="fa fa-heart-o"></span>
-                            {% endif %}
-                        </a>
-                    </td>
-                    <td>
-                        <a href="{% url 'add_to_favorites' idea.id %}" class="favstar">
-                            {% if idea.id|int_to_string in favorites %}
-                                <span class="fa fa-star"></span>
-                            {% else %}
-                                <span class="fa fa-star-o"></span>
-                            {% endif %}
-                        </a>
-                    </td>
-                </tr>
-            {% endfor %}
-        </table>
-	</div>
+    {% include 'partials/new_idea.html' %}
+    <a href="{% url 'favorites' %}">My favorites</a>	
+    {% include 'partials/full_idea_table.html' %}
 </div>
 {% endblock %}

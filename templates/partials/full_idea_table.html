@@ -1,0 +1,37 @@
+{% load brainstorm_filters %}
+<div class="idea-table">
+    <table role="table" class="table table-condensed">
+        <thead>
+            <th style="width:10%;">#</th>
+            <th style="width:60%;">Name</th>
+            <th style="width:10%;text-align: center">Score</th>
+            <th style="width:10%;text-align: center">Like</th>
+            <th style="width:10%;text-align: center">Favorite</th>
+        </thead>
+        {% for idea in ideas %}
+            <tr {% if idea.id in likes %} class="liked" {% endif %}>
+                <td>{{forloop.counter}}</td>
+                <td>{{ idea.name }}</td>
+                <td style="text-align: center">{{ idea.score }}</td>
+                <td style="text-align: center">
+                    <a href="{% url 'like' idea.id %}" class="like">
+                        {% if idea.id|int_to_string in likes %}
+                            <span class="fa fa-heart fa-lg"></span>
+                        {% else %}
+                            <span class="fa fa-heart-o fa-lg"></span>
+                        {% endif %}
+                    </a>
+                </td>
+                <td style="text-align: center">
+                    <a href="{% url 'add_to_favorites' idea.id %}" class="favstar">
+                        {% if idea.id|int_to_string in favorites %}
+                            <span class="fa fa-star fa-lg"></span>
+                        {% else %}
+                            <span class="fa fa-star-o fa-lg"></span>
+                        {% endif %}
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>

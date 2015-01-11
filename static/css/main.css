@@ -1,7 +1,93 @@
+body {
+    background-image:url('../images/background.png');
+
+}
+
 .like {
     color:#FF6666;
 }
 
 .favstar {
     color:#ffff00;
+}
+
+.remove {
+    color:red;
+}
+
+header img {
+    position: relative;
+    float:left;
+    margin:10px;
+    z-index: 0;
+}
+
+header h1 {
+    position: relative;
+    font-size:40px;
+    float:left;
+    margin-left:-100px;
+    padding-left:100px;
+    padding-right:10px;
+    border-radius: 4px;
+    border: 1px solid white;
+    margin-top:60px;
+    background-color:#CCCCCC;
+    z-index: -1;
+}
+
+nav .nav-item {
+    float:left;
+
+}
+
+nav {
+    height:50px;
+}
+
+nav .nav-top {
+    background: #d01e1e;
+    height: 4px;
+}
+
+nav .nav-item {
+    font-size: 18px;
+    width:200px;
+    text-align: center;
+    background-color: #cccccc;
+
+    color:black;
+    line-height: 46px;
+    vertical-align: middle;
+}
+
+nav .nav-item:hover {
+    text-decoration: none;
+    border-top:4px solid black;
+    margin-top:-4px;
+}
+
+nav .nav-item i.fa-star-o, nav .nav-item:hover i.fa-star {
+    color:#FFD700;
+}
+
+nav .nav-item i.fa-heart-o, nav .nav-item i.fa-heart {
+    color:#FF6666;
+}
+
+.new_idea {
+    margin-bottom:20px;
+}
+
+.idea-table {
+    background:white;
+    border:1px solid #cccccc;
+    padding:10px;
+}
+
+.idea-table table {
+    margin-bottom: 0px;
+}
+
+.idea-table table thead {
 }

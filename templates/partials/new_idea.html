@@ -1,0 +1,11 @@
+<div class="new_idea">
+    <h2>Add an idea</h2>
+    <form action="{% url 'add_idea' %}" method="post">
+        {% csrf_token %}
+        <div class="input-group">
+            <input type="text" class="form-control" name="name" placeholder="Enter your idea here!">
+            <span class="input-group-btn"><button class="btn btn-ar btn-primary" type="submit" value="Submit" >Send</button>
+            </span>
+        </div>
+    </form>
+</div>
