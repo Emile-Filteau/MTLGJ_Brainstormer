@@ -9,7 +9,7 @@
             <th style="width:10%;text-align: center">Favorite</th>
         </thead>
         {% for idea in ideas %}
-            <tr {% if idea.id in likes %} class="liked" {% endif %}>
+            <tr idea_id="{{ idea.id }}">
                 <td>{{forloop.counter}}</td>
                 <td>{{ idea.name }}</td>
                 <td style="text-align: center">{{ idea.score }}</td>

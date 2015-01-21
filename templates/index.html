@@ -2,9 +2,16 @@
 
 {% block content %}	
 <div class='container'>
-	
-    {% include 'partials/new_idea.html' %}
-    <a href="{% url 'favorites' %}">My favorites</a>	
-    {% include 'partials/full_idea_table.html' %}
+
+    {% if activation.activated %}
+        {% include 'partials/new_idea.html' %}
+        {% if activation.showing %}
+            <a href="{% url 'favorites' %}">My favorites</a>
+            {% include 'partials/full_idea_table.html' %}
+        {% endif %}
+    {% else %}
+        <h2>The brainstorm is not active yet,<br> please come back later</h2>
+    {% endif %}
 </div>
 {% endblock %}
+

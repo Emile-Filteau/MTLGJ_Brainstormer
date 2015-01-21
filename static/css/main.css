@@ -3,6 +3,10 @@ body {
 
 }
 
+td {
+    word-wrap: break-word;
+}
+
 .like {
     color:#FF6666;
 }
