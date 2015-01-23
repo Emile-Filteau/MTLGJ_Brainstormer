@@ -12,7 +12,7 @@
             <tr idea_id="{{ idea.id }}">
                 <td>{{forloop.counter}}</td>
                 <td>{{ idea.name }}</td>
-                <td style="text-align: center">{{ idea.score }}</td>
+                <td style="text-align: center" class="score">{{ idea.score }}</td>
                 <td style="text-align: center">
                     <a href="{% url 'like' idea.id %}" class="like">
                         {% if idea.id|int_to_string in likes %}

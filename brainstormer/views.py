@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from brainstormer import models, forms
 from django.core.exceptions import ObjectDoesNotExist
+from django.http import HttpResponse
+import json
 
 
 def index(request, notice=None):
@@ -36,6 +38,34 @@ def add_idea(request):
     return redirect('index')
 
 
+def my_favorites(request):
+    activation = models.Activation.objects.first()
+    if activation.activated and activation.showing:
+        favorites = []
+        if request.session.get('fav_list'):
+            favorites = request.session.get('fav_list').split(',')
+
+        ideas = []
+        for favorite in favorites:
+            try:
+                ideas.append(models.Idea.objects.get(pk=int(favorite)))
+            except ObjectDoesNotExist:
+                pass
+
+        return render(request, 'favorites.html', {'ideas': ideas})
+    else:
+        return redirect('index')
+
+
+def remove_from_favorites(request, idea_id):
+    activation = models.Activation.objects.first()
+    if activation.activated and activation.showing:
+        add_to_favorites(request, idea_id)
+    return redirect('favorites')
+
+
+# Called in AJAX, answer in JSON
+
 def like(request, idea_id):
     activation = models.Activation.objects.first()
     if activation.activated and activation.showing:
@@ -58,7 +88,7 @@ def like(request, idea_id):
         except ObjectDoesNotExist:
             pass
 
-    return redirect('index')
+    return HttpResponse(json.dumps({'id': idea.id, 'name': idea.name,  'score': idea.score, 'liked': str(idea.id) in likes}))
 
 
 def add_to_favorites(request, idea_id):
@@ -77,30 +107,4 @@ def add_to_favorites(request, idea_id):
             request.session['fav_list'] = ",".join(favs)
         except ObjectDoesNotExist:
             pass
-    return redirect('index')
-
-
-def remove_from_favorites(request, idea_id):
-    activation = models.Activation.objects.first()
-    if activation.activated and activation.showing:
-        add_to_favorites(request, idea_id)
-    return redirect('favorites')
-
-
-def my_favorites(request):
-    activation = models.Activation.objects.first()
-    if activation.activated and activation.showing:
-        favorites = []
-        if request.session.get('fav_list'):
-            favorites = request.session.get('fav_list').split(',')
-
-        ideas = []
-        for favorite in favorites:
-            try:
-                ideas.append(models.Idea.objects.get(pk=int(favorite)))
-            except ObjectDoesNotExist:
-                pass
-
-        return render(request, 'favorites.html', {'ideas': ideas})
-    else:
-        return redirect('index')
+    return HttpResponse(json.dumps({'id': idea_id, 'favorite': idea_id in favs}))

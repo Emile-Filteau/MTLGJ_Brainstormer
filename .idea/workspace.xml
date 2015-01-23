@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d755c650-b2dc-47b9-97c2-2b9e932949b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/flipclock.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/javascript/flipclock.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/javascript/moment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/partials/full_idea_table.html" afterPath="$PROJECT_DIR$/templates/partials/full_idea_table.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/template.html" afterPath="$PROJECT_DIR$/templates/template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/brainstormer/settings.py" afterPath="$PROJECT_DIR$/brainstormer/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/brainstormer/views.py" afterPath="$PROJECT_DIR$/brainstormer/views.py" />
     </list>
     <ignored path="brainstormer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,6 +29,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/brainstormer/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="0" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.32459018" vertical-offset="864" max-vertical-offset="1836">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="template.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/template.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -39,13 +47,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="94" selection-start="540" selection-end="540" vertical-scroll-proportion="0.432247" vertical-offset="0" max-vertical-offset="630">
+            <state line="64" column="37" selection-start="2183" selection-end="2183" vertical-scroll-proportion="-26.25926" vertical-offset="443" max-vertical-offset="1494">
               <folding>
                 <element signature="e#458#485#0" expanded="true" />
                 <element signature="e#559#598#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/brainstormer/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="109" column="78" selection-start="3511" selection-end="3511" vertical-scroll-proportion="0.0" vertical-offset="1460" max-vertical-offset="2070">
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="full_idea_table.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/partials/full_idea_table.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="54" selection-start="637" selection-end="642" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="756">
+              <folding>
+                <element signature="n#style#0;n#td#3;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,11 +105,11 @@
         <option value="$PROJECT_DIR$/static/css/main.css" />
         <option value="$PROJECT_DIR$/brainstormer/models.py" />
         <option value="$PROJECT_DIR$/brainstormer/admin.py" />
-        <option value="$PROJECT_DIR$/brainstormer/views.py" />
-        <option value="$PROJECT_DIR$/templates/partials/full_idea_table.html" />
-        <option value="$PROJECT_DIR$/brainstormer/settings.py" />
         <option value="$PROJECT_DIR$/templates/template.html" />
+        <option value="$PROJECT_DIR$/templates/partials/full_idea_table.html" />
+        <option value="$PROJECT_DIR$/brainstormer/views.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/brainstormer/settings.py" />
       </list>
     </option>
   </component>
@@ -143,39 +173,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="brainstormer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brainstormer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brainstormer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brainstormer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -490,7 +488,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/brainstormer/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="9" selection-start="104" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="216" />
+        <state line="5" column="9" selection-start="104" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="216">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/template.html">
@@ -510,7 +510,9 @@
     <entry file="file://$PROJECT_DIR$/brainstormer/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="9" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1584">
-          <folding />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -552,7 +554,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/brainstormer/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="9" selection-start="104" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="216" />
+        <state line="5" column="9" selection-start="104" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="216">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/template.html">
@@ -572,7 +576,9 @@
     <entry file="file://$PROJECT_DIR$/brainstormer/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="28" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="1548">
-          <folding />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -614,7 +620,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/brainstormer/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="9" selection-start="104" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="216" />
+        <state line="5" column="9" selection-start="104" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="216">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/template.html">
@@ -627,7 +635,9 @@
     <entry file="file://$PROJECT_DIR$/brainstormer/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="60" selection-start="2219" selection-end="2219" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="1584">
-          <folding />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -725,7 +735,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/brainstormer/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="48" selection-start="277" selection-end="277" vertical-scroll-proportion="0.29508197" vertical-offset="0" max-vertical-offset="610" />
+        <state line="10" column="48" selection-start="277" selection-end="277" vertical-scroll-proportion="0.29508197" vertical-offset="0" max-vertical-offset="610">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/brainstormer/urls.py">
@@ -735,33 +747,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/partials/full_idea_table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="472" selection-end="479" vertical-scroll-proportion="0.15437393" vertical-offset="108" max-vertical-offset="756" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/brainstormer/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="43" selection-start="357" selection-end="357" vertical-scroll-proportion="0.35409835" vertical-offset="0" max-vertical-offset="610" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/brainstormer/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1878" selection-end="1878" vertical-scroll-proportion="-0.05901639" vertical-offset="1062" max-vertical-offset="1962">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/brainstormer/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="399" selection-end="399" vertical-scroll-proportion="0.41311476" vertical-offset="0" max-vertical-offset="610">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/brainstormer/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="47" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.50163937" vertical-offset="864" max-vertical-offset="1926">
           <folding />
         </state>
       </provider>
@@ -787,6 +780,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/partials/full_idea_table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="54" selection-start="637" selection-end="642" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="756">
+          <folding>
+            <element signature="n#style#0;n#td#3;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brainstormer/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="78" selection-start="3511" selection-end="3511" vertical-scroll-proportion="0.0" vertical-offset="1460" max-vertical-offset="2070">
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="37" selection-start="2183" selection-end="2183" vertical-scroll-proportion="-26.25926" vertical-offset="443" max-vertical-offset="1494">
+          <folding>
+            <element signature="e#458#485#0" expanded="true" />
+            <element signature="e#559#598#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="55" selection-start="1598" selection-end="1598" vertical-scroll-proportion="-8.666667" vertical-offset="486" max-vertical-offset="1350">
@@ -794,13 +815,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/brainstormer/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="94" selection-start="540" selection-end="540" vertical-scroll-proportion="0.432247" vertical-offset="0" max-vertical-offset="630">
-          <folding>
-            <element signature="e#458#485#0" expanded="true" />
-            <element signature="e#559#598#0" expanded="true" />
-          </folding>
+        <state line="59" column="0" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.32459018" vertical-offset="864" max-vertical-offset="1836">
+          <folding />
         </state>
       </provider>
     </entry>

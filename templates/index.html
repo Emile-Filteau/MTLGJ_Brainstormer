@@ -22,9 +22,57 @@
     <script>
         var until = moment().hour(19).minute(0).second(0).diff(moment(), 'seconds');
         var clock = $('.countdown_clock').FlipClock({
-            countdown: true
+            countdown: true,
+            autoStart: false
         });
         clock.setTime(until)
         clock.start()
+
+
+        $('.like').click(function(e) {
+            e.preventDefault()
+            that = $(this)
+            $.ajax({
+                method:'get',
+                url: $(that).attr('href'),
+                data: {},
+                success: function(data) {
+                    label = $(that).find('.fa')
+                    data = JSON.parse(data)
+                    if(data['liked']) {
+                        $(label).addClass('fa-heart')
+                        $(label).removeClass('fa-heart-o')
+                    } else {
+                        $(label).addClass('fa-heart-o')
+                        $(label).removeClass('fa-heart')
+                    }
+                    $(that).parents('tr').find('.score').html(data['score'])
+                    $(that).blur()
+                }
+            })
+        })
+
+        $('.favstar').click(function(e) {
+            e.preventDefault()
+            that = $(this)
+            $.ajax({
+                method:'get',
+                url: $(that).attr('href'),
+                data: {},
+                success: function(data) {
+                    data = JSON.parse(data)
+                    label = $(that).find('.fa')
+                    if(data['favorite']) {
+                        $(label).addClass('fa-star')
+                        $(label).removeClass('fa-star-o')
+                    } else {
+                        $(label).addClass('fa-star-o')
+                        $(label).removeClass('fa-star')
+                    }
+                    $(that).blur()
+                }
+            })
+        })
     </script>
+
 {% endblock %}

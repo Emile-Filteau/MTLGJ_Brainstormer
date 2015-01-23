@@ -60,15 +60,10 @@ STATIC_ROOT = 'staticfiles'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd985vloqro6d9q',
-        'USER': 'gsquwqmaavjqni',
-        'PASSWORD': 'yOtZTiT95Mvy_5_pW0-srLkETn',
-        'HOST': 'ec2-54-204-42-178.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
     }
 }
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
