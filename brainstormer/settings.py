@@ -12,12 +12,16 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+DEV = True
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'p%ic8xs*q=62wrj6zcy!)f9z$@j22a(c4$l6xg0cjond#$r_)a'
+if DEV:
+    # SECURITY WARNING: keep the secret key used in production secret!
+    SECRET_KEY = 'p%ic8xs*q=62wrj6zcy!)f9z$@j22a(c4$l6xg0cjond#$r_)a'
+else:
+    SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -58,17 +62,24 @@ STATIC_ROOT = 'staticfiles'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd985vloqro6d9q',
-        'USER': 'gsquwqmaavjqni',
-        'PASSWORD': 'yOtZTiT95Mvy_5_pW0-srLkETn',
-        'HOST': 'ec2-54-204-42-178.compute-1.amazonaws.com',
-        'PORT': '5432',
+if DEV:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'mydatabase',
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': os.environ.get('DB_NAME'),
+            'USER': os.environ.get('DB_USER'),
+            'PASSWORD': os.environ.get('DB_PASSWORD'),
+            'HOST': os.environ.get('DB_HOST'),
+            'PORT': '5432',
+        }
+    }
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
