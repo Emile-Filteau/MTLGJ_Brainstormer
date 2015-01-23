@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d755c650-b2dc-47b9-97c2-2b9e932949b3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
-    </list>
+    <list default="true" id="d755c650-b2dc-47b9-97c2-2b9e932949b3" name="Default" comment="" />
     <ignored path="brainstormer.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,10 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/brainstormer/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="47" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.6786885" vertical-offset="756" max-vertical-offset="1926">
+            <state line="65" column="47" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="1926">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wsgi.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/brainstormer/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="9" selection-start="237" selection-end="237" vertical-scroll-proportion="0.26557377" vertical-offset="0" max-vertical-offset="610">
               <folding />
             </state>
           </provider>
@@ -412,13 +418,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="1" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1800">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/brainstormer/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="9" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1584">
@@ -740,7 +739,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/brainstormer/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="47" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.6786885" vertical-offset="756" max-vertical-offset="1926">
+        <state line="65" column="47" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="1926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brainstormer/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="9" selection-start="237" selection-end="237" vertical-scroll-proportion="0.26557377" vertical-offset="0" max-vertical-offset="610">
           <folding />
         </state>
       </provider>
