@@ -8,10 +8,23 @@
         {% if activation.showing %}
             <a href="{% url 'favorites' %}">My favorites</a>
             {% include 'partials/full_idea_table.html' %}
+        {% else %}
+            <i>Enter your ideas, they will be shown in a couple of minutes</i>
         {% endif %}
     {% else %}
-        <h2>The brainstorm is not active yet,<br> please come back later</h2>
+        <h2 style="text-align: center;">The brainstorm starts on 19:00, please come back later</h2>
+        <div style="width: 460px;margin: 20px auto;" class="countdown_clock"></div>
     {% endif %}
 </div>
 {% endblock %}
 
+{% block javascript %}
+    <script>
+        var until = moment().hour(19).minute(0).second(0).diff(moment(), 'seconds');
+        var clock = $('.countdown_clock').FlipClock({
+            countdown: true
+        });
+        clock.setTime(until)
+        clock.start()
+    </script>
+{% endblock %}
