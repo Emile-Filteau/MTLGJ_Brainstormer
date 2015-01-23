@@ -6,7 +6,7 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://ec2-54-204-42-178.compute-1.amazonaws.com:5432/d985vloqro6d9q</jdbc-url>
       <user-name>gsquwqmaavjqni</user-name>
-      <user-password>dfc7dfd3dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+      <user-password>dfd3dfe5dfdedff0dffedfc3dffedf93df9fdfe7dfdcdfd3dff5df9fdff5dfdadffddf9adf87dfd9dfd8dfe6dfc1dfefdffedfc4</user-password>
       <libraries />
     </data-source>
   </component>
