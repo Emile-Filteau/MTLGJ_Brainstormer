@@ -3,7 +3,7 @@
 This is a tool made for the MTLGameJam community brainstorm.
 Each year, we make a huge brainstorm with everybody around the theme and we don't have a tool to support it.
 
-To see it in action : [brainstorm.mtlgamejam.org](brainstorm.mtlgamejam.org)
+To see it in action : [brainstorm.mtlgamejam.org](https://brainstorm.mtlgamejam.org)
 
 ## Installation ##
 
